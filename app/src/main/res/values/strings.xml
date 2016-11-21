@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">jiayou1</string>
+    <string name="worktime"><u>A:Work time?</u></string>
+    <string name="breaktime"><u>B:Break time?</u></string>
+    <string name="repeatetime"><u>C:Repeat times for A+B?</u></string>
+    <string name="longtime"><u>D:Long rest time?</u></string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menuwithtimersettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#F0F2DD"
+    tools:context="com.example.administrator.productivityenhancer.Menuwithtimersettings">
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/backtomain"
+        android:background="@drawable/menu"
+        android:onClick="mainClicked" />
+    <Button
+        android:text="Like"
+        android:layout_marginLeft="15dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:background="#C4ED68"
+        android:textColor="#373B44"
+        android:id="@+id/like"
+        android:layout_alignTop="@+id/play"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Play"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="#C4ED68"
+        android:textColor="#373B44"
+        android:id="@+id/play"
+        android:onClick="playClicked"
+        android:layout_below="@+id/backtomain"
+        android:layout_toEndOf="@+id/like" />
+
+    <Button
+        android:text="Settings"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:background="#C4ED68"
+        android:textColor="#373B44"
+        android:id="@+id/settings"
+        android:onClick="settingClicked"
+        android:layout_alignTop="@+id/play"
+        android:layout_toEndOf="@+id/play" />
+
+    <Button
+        android:text="User"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:background="#C4ED68"
+        android:textColor="#373B44"
+        android:id="@+id/user"
+        android:layout_alignTop="@+id/settings"
+        android:layout_toEndOf="@+id/settings"
+        android:onClick="userClicked" />
+
+    <EditText
+        android:hint="@string/worktime"
+        android:textStyle="bold|italic"
+        android:background="@drawable/myborder"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/like"
+        android:layout_alignStart="@+id/like" />
+
+    <EditText
+        android:hint="@string/breaktime"
+        android:textStyle="bold|italic"
+        android:background="@drawable/myborder"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:hint="@string/repeatetime"
+        android:textStyle="bold|italic"
+        android:background="@drawable/myborder"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:hint="@string/longtime"
+        android:textStyle="bold|italic"
+        android:background="@drawable/myborder"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <!--<Button-->
+        <!--android:text="1"-->
+        <!--android:background="@drawable/roundbutton"-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/button" />-->
+
+    <!--<Button-->
+        <!--android:text="2"-->
+        <!--android:background="@drawable/roundbutton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/button"-->
+        <!--android:layout_toEndOf="@+id/button"-->
+        <!--android:id="@+id/button2" />-->
+
+    <!--<Button-->
+        <!--android:text="3"-->
+        <!--android:background="@drawable/roundbutton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/button2"-->
+        <!--android:layout_toEndOf="@+id/button2"-->
+        <!--android:id="@+id/button3" />-->
+
+    <!--<Button-->
+        <!--android:text="4"-->
+        <!--android:background="@drawable/roundbutton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:id="@+id/button4" />-->
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pie1"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pie"
+        android:layout_alignStart="@+id/like"
+        android:layout_alignTop="@+id/pie2"
+        android:onClick="pieClicked" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pie2"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pie"
+        android:layout_alignTop="@+id/pie3"
+        android:layout_toEndOf="@+id/like"
+        android:onClick="pieClicked" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pie3"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pie"
+        android:layout_alignTop="@+id/pie4"
+        android:layout_alignStart="@+id/settings"
+        android:onClick="pieClicked" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pie4"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/user"
+        android:onClick="pieClicked"
+        android:nestedScrollingEnabled="false" />
+    <Button
+        android:text="Liked pattern :"
+        android:background="#C4ED68"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/likedpattern"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+</RelativeLayout>

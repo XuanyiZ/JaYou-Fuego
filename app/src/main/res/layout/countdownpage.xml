@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f0f2dd"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/menu"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/menu"
+        android:onClick="menuClicked" />
+
+    <ProgressBar
+        android:id="@+id/workBar"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/work_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="20"
+        android:progress="6" />
+
+    <ProgressBar
+        android:id="@+id/breakBar"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/break_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="20"
+        android:progress="2" />
+
+
+
+    <ProgressBar
+        android:id="@+id/longBar"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/long_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="20"
+        android:progress="12" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/plane"
+        android:onClick="countdown"
+        android:background="@drawable/plane"
+        android:layout_marginTop="70dp"
+        android:elevation="90dp"
+        android:layout_alignTop="@+id/workBar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/stop"
+        android:background="@drawable/stop"
+        android:layout_below="@+id/error"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="36 sec"
+        android:id="@+id/total"
+        android:layout_below="@+id/plane"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="*3"
+        android:id="@+id/times"
+        android:layout_below="@+id/total"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/error"
+        android:text="sample"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/workBar"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F2DD"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E1B866"
+                android:textColor="#373B44"
+                android:text="BACK"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:onClick="backClicked"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textAllCaps="true"
+                android:text="Leaderboards"
+                android:id="@+id/textView3" />
+        </TableRow>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="380dp"
+            android:src="@drawable/play_graph"
+            android:id="@+id/imageView" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/anon"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="  Logged in as"
+                android:id="@+id/textView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=": Admin "
+                android:id="@+id/productID" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E1B866"
+                android:textColor="#373B44"
+                android:text="LOGOUT"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:onClick="logIn" />
+
+            </TableRow>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
