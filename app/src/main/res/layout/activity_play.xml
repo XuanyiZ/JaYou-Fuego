@@ -50,7 +50,7 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:src="@drawable/anon"
-                android:layout_height="60dp"
+                android:layout_height="59dp"
                 android:layout_width="60dp"
                 android:layout_marginLeft="16dp"
                 />
